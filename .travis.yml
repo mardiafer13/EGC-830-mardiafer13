@@ -15,7 +15,7 @@ addons:
 global:
   - PGPORT=5432
 script:
-  - python manage.py test store
+  - python manage.py test
 before_script:
   - cp local_settings.travis local_settings.py
   - psql -U postgres -c "create user decide password 'decide'"
